@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tresfute/static/css/main.06571fee.css",
-    "main.js": "/tresfute/static/js/main.385be170.js",
+    "main.js": "/tresfute/static/js/main.f9fa4a27.js",
     "static/js/787.81d9ae34.chunk.js": "/tresfute/static/js/787.81d9ae34.chunk.js",
     "static/media/tf.jpg": "/tresfute/static/media/tf.230a5ecbb691df76c99f.jpg",
     "static/media/cross.png": "/tresfute/static/media/cross.e25a0400cd9b87e26caa.png",
     "index.html": "/tresfute/index.html",
     "main.06571fee.css.map": "/tresfute/static/css/main.06571fee.css.map",
-    "main.385be170.js.map": "/tresfute/static/js/main.385be170.js.map",
+    "main.f9fa4a27.js.map": "/tresfute/static/js/main.f9fa4a27.js.map",
     "787.81d9ae34.chunk.js.map": "/tresfute/static/js/787.81d9ae34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06571fee.css",
-    "static/js/main.385be170.js"
+    "static/js/main.f9fa4a27.js"
   ]
 }
