@@ -1,0 +1,48 @@
+.tf {
+  text-align: center;
+  position: relative;
+}
+
+.tf_board {
+  background-image: url("../public/tf.jpg");
+  width: 718px;
+  height: 1024px;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  /* border: 1px solid red; */
+}
+
+.crossed {
+  background-image: url("../public/cross.png");  
+  background-size: cover;
+}
+
+.dotted {
+  background-image: url("../public/dot.png");  
+  background-size: cover;
+}
+
+.dotted_crossed {
+  background-image: url("../public/dot_cross.png");  
+  background-size: cover;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content button {
+  margin: 10px;
+  padding: 10px;
+  font-size: large;
+}
+
+.numbers {
+  font-size: 40px;
+  font-weight: bolder;
+  color: red;
+  /* background: white; */
+}
