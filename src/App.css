@@ -44,5 +44,6 @@
   font-size: 40px;
   font-weight: bolder;
   color: red;
-  /* background: white; */
+  background: white;
+  border-radius: 10px;
 }
