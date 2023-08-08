@@ -48,18 +48,25 @@ const blue_info = {
   avoid: [{x: 1, y: 1}]
 }
 
-const gop_info = {
+const green_info = {
   x: 92, w: 47, mx: 7.2,
   y: 720, h: 47, my: 54.5,
-  nx: 11,  ny: 3,
+  nx: 11,  ny: 1,
   avoid: []
 }
 
+const op_info = {
+  x: 92, w: 47, mx: 7.2,
+  y: 820, h: 47, my: 54.5,
+  nx: 11,  ny: 2,
+  avoid: []
+}
 
 const bonus_elems = create_elements(bonus_info, "bonus");
 const yellow_elems = create_elements(yellow_info, "yellow");
 const blue_elems = create_elements(blue_info, "blue");
-const gop_elems = create_elements(gop_info, "gop");
+const green_elems = create_elements(green_info, "green");
+const op_elems = create_elements(op_info, "op");
 
 function ClickableBox2States({name, x, y, w, h}) {
   
@@ -157,7 +164,8 @@ function App() {
   const bonus_map = bonus_elems.map(b => <ClickableBox3States x={b.x} y={b.y} w={b.w} h={b.h}/>)
   const yellow_map = yellow_elems.map(b => <ClickableBox2States x={b.x} y={b.y} w={b.w} h={b.h}/>)
   const blue_map = blue_elems.map(b => <ClickableBox2States x={b.x} y={b.y} w={b.w} h={b.h}/>)
-  const gop_map = gop_elems.map(b => <ClickableBox6States x={b.x} y={b.y} w={b.w} h={b.h}/>)
+  const green_map = green_elems.map(b => <ClickableBox2States x={b.x} y={b.y} w={b.w} h={b.h}/>)
+  const op_map = op_elems.map(b => <ClickableBox6States x={b.x} y={b.y} w={b.w} h={b.h}/>)
 
   return (
     <div className="tf">
@@ -165,7 +173,8 @@ function App() {
           {bonus_map}
           {yellow_map}
           {blue_map}
-          {gop_map}
+          {green_map}
+          {op_map}
           </div>
     </div>
   );
