@@ -1,4 +1,4 @@
-import './App.css';
+import './TresFute.css';
 
 import ClickableBox2States from './ClickableBox2States.js'
 import ClickableBox3States from './ClickableBox3States.js'
