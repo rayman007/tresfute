@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tresfute/static/css/main.fcdf2a54.css",
+    "main.css": "/tresfute/static/css/main.192a9155.css",
     "main.js": "/tresfute/static/js/main.f9fa4a27.js",
     "static/js/787.81d9ae34.chunk.js": "/tresfute/static/js/787.81d9ae34.chunk.js",
-    "static/media/tf.jpg": "/tresfute/static/media/tf.d9a980053fa5ae5624dd.jpg",
+    "static/media/tf.jpg": "/tresfute/static/media/tf.8baedef19a3e08aa9dfa.jpg",
     "static/media/cross.png": "/tresfute/static/media/cross.e25a0400cd9b87e26caa.png",
     "index.html": "/tresfute/index.html",
-    "main.fcdf2a54.css.map": "/tresfute/static/css/main.fcdf2a54.css.map",
+    "main.192a9155.css.map": "/tresfute/static/css/main.192a9155.css.map",
     "main.f9fa4a27.js.map": "/tresfute/static/js/main.f9fa4a27.js.map",
     "787.81d9ae34.chunk.js.map": "/tresfute/static/js/787.81d9ae34.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcdf2a54.css",
+    "static/css/main.192a9155.css",
     "static/js/main.f9fa4a27.js"
   ]
 }
