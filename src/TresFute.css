@@ -1,5 +1,6 @@
 .tf {
   text-align: center;
+  background-color: black;
 }
 
 .tf_board {
@@ -7,6 +8,7 @@
   width: 718px;
   height: 1024px;
   position: relative;
+  display: inline-block;
 }
 
 .box {
@@ -57,8 +59,8 @@
   font-size: 40px;
   font-weight: bolder;
   background-color: black;
-  float: left;
-  width: 80.5px;
+  display: inline-block;
+  width: 75px;
 }
 
 .yellow_score {
