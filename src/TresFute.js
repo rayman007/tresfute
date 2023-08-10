@@ -111,7 +111,6 @@ function ScoreBoard({values}) {
       <div className="score_box purple_score">{scores.purple}</div>
       <div className="score_box red_score">{scores.fox}</div>
       <div className="score_box black_score">{scores.total}</div>
-      <div style={{clear: 'both'}}/>
     </div>
 
   );
