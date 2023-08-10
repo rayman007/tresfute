@@ -91,14 +91,14 @@ export default function TresFuteScoreBoard({values}) {
 
   return(
 
-    <div className='scores'>
-      <div className="score_box yellow_score">{scores.yellow}</div>
-      <div className="score_box blue_score">{scores.blue}</div>
-      <div className="score_box green_score">{scores.green}</div>
-      <div className="score_box orange_score">{scores.orange}</div>
-      <div className="score_box purple_score">{scores.purple}</div>
-      <div className="score_box red_score">{scores.fox}</div>
-      <div className="score_box black_score">{scores.total}</div>
+    <div className='tf_scores'>
+      <div className="tf_score_box tf_yellow_score">{scores.yellow}</div>
+      <div className="tf_score_box tf_blue_score">{scores.blue}</div>
+      <div className="tf_score_box tf_green_score">{scores.green}</div>
+      <div className="tf_score_box tf_orange_score">{scores.orange}</div>
+      <div className="tf_score_box tf_purple_score">{scores.purple}</div>
+      <div className="tf_score_box tf_red_score">{scores.fox}</div>
+      <div className="tf_score_box tf_black_score">{scores.total}</div>
     </div>
 
   );

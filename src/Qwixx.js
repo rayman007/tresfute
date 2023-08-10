@@ -57,7 +57,7 @@ function Qwixx() {
 
   function legalChecker(info, value) {
 
-    const check_mode = true;
+    const check_mode = false;
 
     if (check_mode) {
       if (value === 0) {

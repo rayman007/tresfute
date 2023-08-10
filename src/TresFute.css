@@ -11,11 +11,11 @@
 }
 
 
-.scores {
+.tf_scores {
   position: static;
   width: 718px;
 }
-.score_box {
+.tf_score_box {
   padding: 10px;
   border: 1px solid black;
   position:static;
@@ -26,30 +26,30 @@
   width: 75px;
 }
 
-.yellow_score {
+.tf_yellow_score {
   color: yellow
 }
 
-.blue_score {
+.tf_blue_score {
   color: blue
 }
 
-.green_score {
+.tf_green_score {
   color: green
 }
 
-.orange_score {
+.tf_orange_score {
   color: orange
 }
 
-.purple_score {
+.tf_purple_score {
   color: magenta
 }
 
-.red_score {
+.tf_red_score {
   color: red
 }
 
-.black_score {
+.tf_black_score {
   color: white
 }
