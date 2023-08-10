@@ -1,6 +1,5 @@
 .tf {
   text-align: center;
-  position: relative;
 }
 
 .tf_board {
@@ -46,4 +45,46 @@
   color: red;
   background: white;
   border-radius: 10px;
+}
+
+.scores {
+  position: static;
+}
+.score_box {
+  padding: 10px;
+  border: 1px solid black;
+  position:static;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: black;
+  float: left;
+  width: 80.5px;
+}
+
+.yellow_score {
+  color: yellow
+}
+
+.blue_score {
+  color: blue
+}
+
+.green_score {
+  color: green
+}
+
+.orange_score {
+  color: orange
+}
+
+.purple_score {
+  color: magenta
+}
+
+.red_score {
+  color: red
+}
+
+.black_score {
+  color: white
 }

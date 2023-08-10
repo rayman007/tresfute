@@ -1,26 +1,26 @@
 import { useState } from 'react';
 
-export default function ClickableBox2States({name, x, y, w, h}) {
-  
-  const [ticked, setTicked] = useState(false);
+export default function ClickableBox2States({info}) {
 
-  const tickedClass = (ticked ? " crossed" : "")
+  const [ticked, setTicked] = useState(0);
+
+  const tickedClass = (ticked === 1 ? " crossed" : "")
 
   const handleClick = (e) => {
     e.preventDefault();
-    if (ticked) {
-      setTicked(false);
-    } else {
-      setTicked(true);
+    const new_ticked = (ticked === 0 ? 1 : 0);
+    if (info.checkLegal(info, new_ticked)) {
+      setTicked(new_ticked)
+      info.setValue(info, new_ticked)
     }
   }
   
   return (
     <div 
        onClick={(e) => handleClick(e)}
-       key={name}
+       key={info.name}
        className={"box" + tickedClass}
-       style={{top: y, left: x, width: w, height: h}}></div>
+       style={{top: info.py, left: info.px, width: info.w, height: info.h}}></div>
   )
 }
 
