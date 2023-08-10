@@ -1,0 +1,6 @@
+.game_manager > button {
+    padding: 15px;
+    border: 1px solid black;
+    margin: 15px;
+    font-size: 30px;
+}

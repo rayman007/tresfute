@@ -3,8 +3,6 @@ export default function TresFuteScoreBoard({values}) {
   function computeScore(values) {
     let yellow_score = 0
   
-    console.log(values)
-
     if ((values["yellow"][0][0] === 1) && (values["yellow"][1][0] === 1) && (values["yellow"][2][0] === 1)) {
       yellow_score += 10;
     }

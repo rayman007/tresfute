@@ -122,7 +122,6 @@ function TresFute() {
   }
   
   function setValue(info, value) {
-    console.log("New Value : " + info.section + " " + info.x + " " + info.y + " => " + value);
     values[info.section][info.y][info.x] = value;
     setValues({...values});
   }

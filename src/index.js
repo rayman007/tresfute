@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import TresFute from './TresFute';
+import GameManager from './GameManager.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TresFute />
+    <GameManager />
   </React.StrictMode>
 );
