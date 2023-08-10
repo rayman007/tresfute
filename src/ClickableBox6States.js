@@ -1,3 +1,5 @@
+import './ClickableBoxes.css';
+
 import { useState } from 'react';
 
 import Popup from 'reactjs-popup';

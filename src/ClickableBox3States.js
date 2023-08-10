@@ -1,3 +1,5 @@
+import './ClickableBoxes.css';
+
 import { useState } from 'react';
 
 export default function ClickableBox3States({info}) {
