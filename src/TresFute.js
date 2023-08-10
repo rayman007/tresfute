@@ -3,118 +3,11 @@ import './TresFute.css';
 import ClickableBox2States from './ClickableBox2States.js'
 import ClickableBox3States from './ClickableBox3States.js'
 import ClickableBox6States from './ClickableBox6States.js'
+import TresFuteScoreBoard from './TresFuteScoreBoard.js'
 
 import { useState } from 'react';
 
 
-function ScoreBoard({values}) {
-
-  function computeScore(values) {
-    let yellow_score = 0
-  
-    console.log(values)
-
-    if ((values["yellow"][0][0] === 1) && (values["yellow"][1][0] === 1) && (values["yellow"][2][0] === 1)) {
-      yellow_score += 10;
-    }
-    if ((values["yellow"][0][1] === 1) && (values["yellow"][1][1] === 1) && (values["yellow"][3][1] === 1)) {
-      yellow_score += 14;
-    }
-    if ((values["yellow"][0][2] === 1) && (values["yellow"][2][2] === 1) && (values["yellow"][3][2] === 1)) {
-      yellow_score += 16;
-    }
-    if ((values["yellow"][1][3] === 1) && (values["yellow"][2][3] === 1) && (values["yellow"][3][3] === 1)) {
-      yellow_score += 20;
-    }
-
-    let blue_count = 0;
-    for (let j = 0 ; j < 3 ; j++) {
-      for (let i = 0 ; i < 4 ; i++) {
-          if (values["blue"][j][i] === 1) {
-            blue_count++;
-          }
-      }
-    }
-
-    const blue_scores = [0, 1, 2, 4, 7, 11, 16, 22, 29, 37, 46, 56]
-
-    let green_count = 0;
-    for (let i = 0 ; i < 11 ; i++) {
-        if (values["green"][0][i] !== 0) {
-          green_count++;
-        }
-      }
-    
-    let blue_score = blue_scores[blue_count];
-
-    const green_scores = [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66]
-
-    let green_score = green_scores[green_count]
-    
-    let orange_score = 0;
-    let orange_mult = [1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 3]
-    for (let i = 0 ; i < 11 ; i++) {
-      orange_score += values["orange"][0][i] * orange_mult[i];
-    }
-    
-    let purple_score = 0;
-    for (let i = 0 ; i < 11 ; i++) {
-      purple_score += values["purple"][0][i];
-    }
-    
-    let nbfox = 0;
-
-    if ((values["yellow"][3][1] === 1) && (values["yellow"][3][2] === 1) && (values["yellow"][3][3] === 1)) {
-      nbfox++;
-    }
-
-    if ((values["blue"][2][0] === 1) && (values["blue"][2][1] === 1) && (values["blue"][2][2] === 1) && (values["blue"][2][3] === 1)) {
-      nbfox++;
-    }
-
-    if ((values["green"][0][6] === 1)) {
-      nbfox++;
-    }
-    if ((values["orange"][0][7] !== 0)) {
-      nbfox++;
-    }
-
-    if ((values["purple"][0][6] !== 0)) {
-      nbfox++;
-    }
-
-    let fox_score = nbfox * Math.min(yellow_score, blue_score, green_score, orange_score, purple_score)
-
-    return {
-      yellow: yellow_score,
-      blue: blue_score,
-      green: green_score,
-      orange: orange_score,
-      purple: purple_score,
-      fox: fox_score,
-      total: yellow_score + blue_score + green_score + orange_score + purple_score + fox_score
-    }
-  }
-  
-
-
-  console.log ("rendering score")
-  const scores = computeScore(values)
-
-  return(
-
-    <div className='scores'>
-      <div className="score_box yellow_score">{scores.yellow}</div>
-      <div className="score_box blue_score">{scores.blue}</div>
-      <div className="score_box green_score">{scores.green}</div>
-      <div className="score_box orange_score">{scores.orange}</div>
-      <div className="score_box purple_score">{scores.purple}</div>
-      <div className="score_box red_score">{scores.fox}</div>
-      <div className="score_box black_score">{scores.total}</div>
-    </div>
-
-  );
-}
 
 
 const turns_info = {
@@ -205,19 +98,24 @@ function TresFute() {
   });
 
   function legalChecker(info, value) {
-    console.log("Checking : " + info.name + " " + info.x + " " + info.y)
-  
-    if (value === 0) {
-      return false;
-    }
-  
-    if ((info.section === "turns") || (info.section === "replay") || (info.section === "addone") || (info.section === "green") || (info.section === "orange") || (info.section === "purple")) {
-      if (info.x === 0) {
-        return true;
-      } else {
-        return values[info.section][info.y][info.x - 1] !== 0;
+
+    const check_mode = false;
+
+    if (check_mode) {
+      if (value === 0) {
+        return false;
       }
-  
+    
+      if ((info.section === "turns") || (info.section === "replay") || (info.section === "addone") || (info.section === "green") || (info.section === "orange") || (info.section === "purple")) {
+        if (info.x === 0) {
+          return true;
+        } else {
+          return values[info.section][info.y][info.x - 1] !== 0;
+        }
+    
+      } else {
+        return true;
+      }
     } else {
       return true;
     }
@@ -276,11 +174,9 @@ function TresFute() {
   const orange_map = orange_elems.map(info => <ClickableBox6States info={info}/>)
   const purple_map = purple_elems.map(info => <ClickableBox6States info={info}/>)
   
-  console.log ("rendering parent")
-
   return (
     <div className="tf">
-          <ScoreBoard values={values} />
+          <TresFuteScoreBoard values={values} />
           <div className="tf_board">
           {turns_map}
           {replay_map}
