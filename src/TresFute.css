@@ -51,6 +51,7 @@
 
 .scores {
   position: static;
+  width: 768px;
 }
 .score_box {
   padding: 10px;
