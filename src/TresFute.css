@@ -8,7 +8,6 @@
   width: 718px;
   height: 1024px;
   position: relative;
-  display: inline-block;
 }
 
 .box {
@@ -51,7 +50,7 @@
 
 .scores {
   position: static;
-  width: 768px;
+  width: 718px;
 }
 .score_box {
   padding: 10px;
