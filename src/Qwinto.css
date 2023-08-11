@@ -1,0 +1,76 @@
+.qwinto {
+  text-align: center;
+  background-color: white;
+}
+
+.qwinto_board {
+  background-image: url("../public/qwinto.jpg");
+  width: 1024px;
+  height: 578px;
+  position: relative;
+}
+
+.qwinto_score_box {
+  padding: 10px;
+  position:absolute;
+  font-size: 32px;
+  font-weight: bolder;
+  width: 48px;
+  /* border: 1px solid red; */
+  top: 480px;
+  line-height: 47px;
+}
+
+.qwinto_yellow_score {
+  color: darkgoldenrod;
+  left: 120px;
+}
+
+.qwinto_blue_score {
+  color: blue;
+  left: 210px;
+}
+
+.qwinto_red_score {
+  color: red;
+  left: 33px;
+}
+
+.qwinto_fail_score {
+  color: gray;
+  left: 755px;
+}
+
+.qwinto_total_score {
+  color: black;
+  left: 880px;
+}
+
+.qwinto_col1_score {
+  color: black;
+  left: 330px;
+}
+
+.qwinto_col2_score {
+  color: black;
+  left: 407px;
+}
+
+.qwinto_col3_score {
+  color: black;
+  left: 482px;
+}
+
+.qwinto_col4_score {
+  color: black;
+  left: 558px;
+}
+
+.qwinto_col5_score {
+  color: black;
+  left: 634px;
+}
+.qwinto .numbers {
+  line-height: 74px;
+  background: none;
+}

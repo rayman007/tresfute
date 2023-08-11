@@ -21,7 +21,8 @@ function create_elements(info, legalChecker, setValue) {
                     w: info.w,
                     h: info.h,
                     checkLegal: legalChecker,
-                    setValue: setValue
+                    setValue: setValue,
+                    info: info
                 });
             }
         }
@@ -34,7 +35,6 @@ export default function create_all_elements(all_info, legalChecker, setValue) {
     for (let i in all_info) {
         let ainfo = all_info[i]
         let temp_elems = create_elements(ainfo, legalChecker, setValue);
-        console.log(ainfo.comp)
         let temp_map = temp_elems.map(info => React.createElement(ainfo.comp, {info}))
         out = [...out, ...temp_map]
     }
