@@ -37,6 +37,8 @@ function TresFute() {
       x: 218, w: 50, mx: 18,
       y: 153, h: 49, my: 59,
       nx: 7,  ny: 1,
+      state1_class: "dotted",
+      state2_class: "dotted_crossed",
       avoid: []
     },
   
@@ -46,6 +48,8 @@ function TresFute() {
       x: 218, w: 50, mx: 18,
       y: 262, h: 50, my: 59,
       nx: 7,  ny: 1,
+      state1_class: "dotted",
+      state2_class: "dotted_crossed",
       avoid: []
     },
   

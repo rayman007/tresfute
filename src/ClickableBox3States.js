@@ -9,10 +9,10 @@ export default function ClickableBox3States({info}) {
   let tickedClass;
   switch(ticked) { 
     case 1:
-      tickedClass = " dotted";
+      tickedClass = info.info.state1_class;
       break;
     case 2:
-      tickedClass = " dotted_crossed";
+      tickedClass = info.info.state2_class;
       break;
     default:
       tickedClass = ""
@@ -32,7 +32,7 @@ export default function ClickableBox3States({info}) {
     <div 
        onClick={(e) => handleClick(e)}
        key={info.name}
-       className={"box" + tickedClass}
+       className={"box " + tickedClass}
        style={{top: info.py, left: info.px, width: info.w, height: info.h}}></div>
   )
 }

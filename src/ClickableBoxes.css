@@ -1,5 +1,7 @@
 .box {
   position: absolute;
+  cursor: pointer;
+  user-select: none;
   /* border: 1px solid red; */
 }
 
@@ -15,6 +17,16 @@
 
 .dotted_crossed {
   background-image: url("../public/dot_cross.png");  
+  background-size: cover;
+}
+
+.circled {
+  background-image: url("../public/circle.png");  
+  background-size: cover;
+}
+
+.circled_crossed {
+  background-image: url("../public/circle_cross.png");  
   background-size: cover;
 }
 
@@ -35,4 +47,10 @@
   color: red;
   background: white;
   border-radius: 10px;
+}
+
+.caption {
+  font-weight: bolder;
+  display: inline-block;
+  white-space: break-spaces;
 }

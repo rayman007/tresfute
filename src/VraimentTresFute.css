@@ -1,0 +1,55 @@
+.vtf {
+  text-align: center;
+  background-color: black;
+}
+
+.vtf_board {
+  background-image: url("../public/vtf.jpg");
+  width: 872px;
+  height: 1065px;
+  position: relative;
+}
+
+
+.vtf_scores {
+  position: static;
+  width: 718px;
+}
+.vtf_score_box {
+  padding: 10px;
+  border: 1px solid black;
+  position:static;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: black;
+  display: inline-block;
+  width: 75px;
+}
+
+.vtf_yellow_score {
+  color: yellow
+}
+
+.vtf_blue_score {
+  color: blue
+}
+
+.vtf_green_score {
+  color: green
+}
+
+.vtf_orange_score {
+  color: orange
+}
+
+.vtf_purple_score {
+  color: magenta
+}
+
+.vtf_red_score {
+  color: red
+}
+
+.vtf_black_score {
+  color: white
+}

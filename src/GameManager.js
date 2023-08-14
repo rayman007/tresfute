@@ -1,4 +1,5 @@
 import TresFute from './TresFute';
+import VraimentTresFute from './VraimentTresFute.js';
 import Qwixx from './Qwixx';
 import Qwinto from './Qwinto';
 
@@ -15,6 +16,7 @@ function GameManager() {
             <div className='game_manager'>
                 <h1>Select a game : </h1>
                 <button onClick={() => setGame("tres_fute")}>Tres Futé</button>
+                <button onClick={() => setGame("vraiment_tres_fute")}>Vraiment Tres Futé</button>
                 <button onClick={() => setGame("qwixx")}>Qwixx</button>
                 <button onClick={() => setGame("qwinto")}>Qwinto</button>
             </div>
@@ -24,6 +26,12 @@ function GameManager() {
     if (game === "tres_fute") {
         return (
             <TresFute/>
+        );
+    }
+
+    if (game === "vraiment_tres_fute") {
+        return (
+            <VraimentTresFute/>
         );
     }
 
