@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/tresfute/static/css/main.47175beb.css",
-    "main.js": "/tresfute/static/js/main.f414c7e0.js",
+    "main.css": "/tresfute/static/css/main.1c275056.css",
+    "main.js": "/tresfute/static/js/main.4e1eaa83.js",
+    "static/media/vtf.jpg": "/tresfute/static/media/vtf.73a9898f3292c8798d6d.jpg",
     "static/media/tf.jpg": "/tresfute/static/media/tf.8baedef19a3e08aa9dfa.jpg",
     "static/media/qwixx.jpg": "/tresfute/static/media/qwixx.99cf46bd207c15e82bab.jpg",
     "static/media/qwinto.jpg": "/tresfute/static/media/qwinto.4667e407c48a83aa3206.jpg",
     "static/media/cross.png": "/tresfute/static/media/cross.e25a0400cd9b87e26caa.png",
     "index.html": "/tresfute/index.html",
-    "main.47175beb.css.map": "/tresfute/static/css/main.47175beb.css.map",
-    "main.f414c7e0.js.map": "/tresfute/static/js/main.f414c7e0.js.map"
+    "main.1c275056.css.map": "/tresfute/static/css/main.1c275056.css.map",
+    "main.4e1eaa83.js.map": "/tresfute/static/js/main.4e1eaa83.js.map"
   },
   "entrypoints": [
-    "static/css/main.47175beb.css",
-    "static/js/main.f414c7e0.js"
+    "static/css/main.1c275056.css",
+    "static/js/main.4e1eaa83.js"
   ]
 }
