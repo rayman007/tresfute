@@ -28,7 +28,7 @@ export default function ClickableBoxNStates({info}) {
         <div 
           key={info.name}
           className={"box" + (value === info.info.default_value ? "" : " numbers")}
-          style={{top: info.py, left: info.px, width: info.w, height: info.h}}>{value === 0 ? "" : value}</div>
+          style={{top: info.py, left: info.px, width: info.w, height: info.h, lineHeight: info.h + "px", background: info.info.bgcolor}}>{value === 0 ? "" : value}</div>
       }
       modal
       closeOnDocumentClick
