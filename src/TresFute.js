@@ -9,11 +9,6 @@ import create_all_elements from './helpers.js';
 
 import { useState } from 'react';
 
-
-
-
-
-
 function TresFute() {
 
   const popup_states = [

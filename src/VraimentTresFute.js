@@ -261,6 +261,7 @@ function VraimentTresFute() {
       value: "0",
       fsize: "40px",
       values: [[scores.grey], [scores.yellow], [scores.blue], [scores.green], [scores.pink], [scores.fox], [scores.total]],
+      color: [["gray"], ["gold"], ["blue"], ["green"], ["magenta"], ["red"], ["black"]],
       avoid: []
     },
 
@@ -271,6 +272,7 @@ function VraimentTresFute() {
       y: 858, h: 20, my: 80,
       nx: 6,  ny: 1,
       values: [scores.green_subscores],
+      color: [Array(6).fill("black")],
       fsize: "12px",
       avoid: []
     },
