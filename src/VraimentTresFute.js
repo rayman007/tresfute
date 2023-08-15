@@ -74,8 +74,8 @@ function VraimentTresFute() {
           yellow_count = yellow_count + 1;
         }
       }
-      yellow_score += yellow_score_scale[yellow_count];
     }
+    yellow_score = yellow_score_scale[yellow_count];
 
     let blue_score = 0
     const blue_score_scale = [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78]
