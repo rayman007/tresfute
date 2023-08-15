@@ -59,7 +59,7 @@ function Qwixx() {
     let yellow_score=scores[count_values_in_color(values, "yellow")]
     let green_score=scores[count_values_in_color(values, "green")]
     let blue_score=scores[count_values_in_color(values, "blue")]
-    let fail_score=count_values_in_color(values, "fail") * -5
+    let fail_score=count_values_in_color(values, "fail") * 5
     
     return {
       red: red_score,
@@ -67,7 +67,7 @@ function Qwixx() {
       green: green_score,
       blue: blue_score,
       fail: fail_score,
-      total: red_score + yellow_score + green_score + blue_score + fail_score
+      total: red_score + yellow_score + green_score + blue_score - fail_score
     }
   }
   
