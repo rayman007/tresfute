@@ -68,7 +68,6 @@ function VraimentTresFute() {
     let yellow_count = 0;
     const yellow_score_scale = [0, 3, 10, 21, 36, 55, 75, 96, 118, 141, 165]
     for (let j = 0 ; j < 5 ; j++) {
-      yellow_count = 0
       for (let i = 0 ; i < 4 ; i++) {
         if (values["yellow"][j][i] === 2) {
           yellow_count = yellow_count + 1;
